@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import Layout from '../components/layout'
 import Header from '../components/Header'
 import Nav from '../components/Nav'
-import carlos from '../assets/images/carlos.jpg'
+import carlos from '../assets/images/Carlos.jpg'
 import cadence from '../assets/images/cadence.gif'
 import Tech from './Tech'
 
