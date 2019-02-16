@@ -13,7 +13,7 @@ const Footer = props => {
         <ul className="actions">
           <li>
             <a
-              href="https://www.linkedin.com/in/carlos-lantigua/"
+              href="https://github.com/CLantigua2"
               target="_blank"
               rel="noopener noreferrer"
               className="button"

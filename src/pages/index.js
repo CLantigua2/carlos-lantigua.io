@@ -8,6 +8,7 @@ import Header from '../components/Header'
 import Nav from '../components/Nav'
 import carlos from '../assets/images/Carlos.jpg'
 import cadence from '../assets/images/cadence.gif'
+import chatify from '../assets/images/chatify.gif'
 import Tech from './Tech'
 
 class Index extends React.Component {
@@ -56,7 +57,7 @@ class Index extends React.Component {
                 </p>
               </div>
               <span className="image">
-                <img src={carlos} alt="" />
+                <img src={carlos} alt="creator avatar" />
               </span>
             </div>
           </section>
@@ -98,7 +99,17 @@ class Index extends React.Component {
                 </p>
               </li>
               <li>
-                <span className="icon major style3 fa-copy" />
+                <Cadence
+                  href="https://getchatify.netlify.com/"
+                  target="_blank"
+                  rel="noopner noreferrer"
+                >
+                  <img
+                    className="cadence-img"
+                    src={chatify}
+                    alt="chatify gif"
+                  />
+                </Cadence>
                 <h3>
                   <a href="#" target="_blank" rel="noopener noreferrer">
                     Chatify - Slack Clone App
@@ -109,7 +120,14 @@ class Index extends React.Component {
                   This site was built with a ReactJS and redux front end,
                   followed by styled-components. The backend was built using
                   NodeJS, ExpressJS, MongoDB, JSON-Web-Token with PassportJS and
-                  validatorJS.
+                  validatorJS.{' '}
+                  <a
+                    href="https://github.com/CLantigua2/chatify"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    view the repo
+                  </a>
                 </p>
               </li>
               <li>
@@ -175,6 +193,6 @@ const Cadence = styled.a`
     box-shadow: 7px 7px 21px -5px rgba(0, 0, 0, 0.23);
     border-radius: 5px;
     width: 100%;
-    margin-bottom: 96px;
+    margin-bottom: 50px;
   }
 `
