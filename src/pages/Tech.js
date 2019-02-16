@@ -5,23 +5,23 @@ const Tech = () => (
   <ul className="statistics">
     <Icons className="style1">
       <i className="fab fa-js-square" />
-      JavaScript
+      <p>JavaScript</p>
     </Icons>
     <Icons className="style2">
       <i className="fab fa-react" />
-      ReactJS
+      <p>ReactJS</p>
     </Icons>
     <Icons className="style3">
       <i className="fab fa-node" />
-      NodeJS
+      <p>NodeJS</p>
     </Icons>
     <Icons className="style4">
-      <i class="fab fa-python" />
-      Python
+      <i className="fab fa-python" />
+      <p>Python</p>
     </Icons>
     <Icons className="style5">
       <i className="fas fa-code-branch" />
-      Git
+      <p>Git</p>
     </Icons>
   </ul>
 )
@@ -31,9 +31,13 @@ export default Tech
 const Icons = styled.li`
   display: flex;
   flex-direction: column;
+
   height: 100%;
   i {
     font-size: 50px;
     margin-bottom: 10px;
+  }
+  p {
+    margin: 0;
   }
 `
