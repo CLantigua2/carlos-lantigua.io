@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import logo from '../assets/images/logo.png'
 
 const Header = () => {
   const list = [
@@ -13,7 +14,8 @@ const Header = () => {
   ]
   return (
     <header id="header" className="alt">
-      <h1>Carlos Lantigua</h1>
+      {/* <h1>Carlos Lantigua</h1> */}
+      <img src={logo} />
       <p>Full Stack Web Developer</p>
       <br />
       <Container>

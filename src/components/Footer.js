@@ -14,14 +14,14 @@ const Footer = props => {
         </p>
         <ul className="actions">
           <li>
-            <Link
-              to="https://www.linkedin.com/in/carlos-lantigua/"
+            <a
+              href="https://www.linkedin.com/in/carlos-lantigua/"
               target="_blank"
               rel="noopener noreferrer"
               className="button"
             >
               My GitHub
-            </Link>
+            </a>
           </li>
         </ul>
       </section>
