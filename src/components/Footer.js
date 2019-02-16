@@ -1,14 +1,15 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import styled from 'styled-components'
 
-const Footer = props => {
+const Footer = () => {
   return (
-    <footer id="footer">
+    <FooterContainer id="footer">
       <section>
         <h2>Want to see what else I build?</h2>
         <p>
-          Click the link below to checkout my github. I can be reached through
-          either Linkedin, twitter or github.
+          Click the link below to checkout my github. <br />I can be reached
+          through either Linkedin, <br />
+          twitter or github.
         </p>
         <ul className="actions">
           <li>
@@ -69,7 +70,11 @@ const Footer = props => {
         </ul>
       </section>
       <p className="copyright">&copy; Carlos Lantigua.</p>
-    </footer>
+    </FooterContainer>
   )
 }
 export default Footer
+
+const FooterContainer = styled.footer`
+  margin: 0;
+`
