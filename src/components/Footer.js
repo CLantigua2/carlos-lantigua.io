@@ -5,12 +5,10 @@ const Footer = props => {
   return (
     <footer id="footer">
       <section>
-        <h2>Aliquam sed mauris</h2>
+        <h2>Want to see what else I build?</h2>
         <p>
-          Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat
-          magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris.
-          Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit,
-          vitae tincidunt odio.
+          Click the link below to checkout my github. I can be reached through
+          either Linkedin, twitter or github.
         </p>
         <ul className="actions">
           <li>
