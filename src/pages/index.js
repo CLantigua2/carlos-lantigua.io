@@ -99,10 +99,17 @@ class Index extends React.Component {
               </li>
               <li>
                 <span className="icon major style3 fa-copy" />
-                <h3>Amed sed feugiat</h3>
+                <h3>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    Chatify - Slack Clone App
+                  </a>
+                </h3>
                 <p>
-                  Sed lorem amet ipsum dolor et amet nullam consequat a feugiat
-                  consequat tempus veroeros sed consequat.
+                  Chatify was built to mimic the popular community app Slack.
+                  This site was built with a ReactJS and redux front end,
+                  followed by styled-components. The backend was built using
+                  NodeJS, ExpressJS, MongoDB, JSON-Web-Token with PassportJS and
+                  validatorJS.
                 </p>
               </li>
               <li>

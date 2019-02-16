@@ -1,19 +1,17 @@
-# gatsby-starter-stellar
+# Carlos Lantigua - Portfolio Site
 
 **This starter has been updated for Gatsby.js V2.**
 
-**The older V1 version of this starter can be found in the V1 branch**
+## About
 
-Gatsby.js V2 starter based on the Stellar site template, designed by HTML5 UP. Check out https://codebushi.com/gatsby-starters/ for more Gatsby starters and templates.
-
-## Preview
-
-https://gatsby-stellar.surge.sh/
+This Site was built to showcase projects and information for Carlos Lantigua as a FullStack developer. If you want view the site please in it's current state, click [here](https://carlos-lantigua.netlify.com/)
 
 ## Installation
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-<br>
-`gatsby new gatsby-starter-stellar https://github.com/codebushi/gatsby-starter-stellar`
+To install the application in a local dev environment, you can fork the repository then simply git clone. No environmental variables are required to make this project run. Simply run the command:
 
-Run `gatsby develop` in the terminal to start the dev site.
+`yarn dev`
+
+This will begin the local server on:
+
+`http://localhost:8000/`

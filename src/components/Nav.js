@@ -20,12 +20,12 @@ const Nav = props => (
         </Scroll>
       </li>
       <li>
-        <a href="/generic">About Me</a>
+        <Scroll type="id" element="second">
+          <a href="#">Tech</a>
+        </Scroll>
       </li>
       <li>
-        <Scroll type="id" element="cta">
-          <a href="#">Get Started</a>
-        </Scroll>
+        <a href="/generic">About Me</a>
       </li>
     </Scrollspy>
   </nav>

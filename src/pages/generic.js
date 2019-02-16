@@ -15,6 +15,11 @@ const Generic = () => (
         <span className="image main">
           <img src={family} alt="my family" />
         </span>
+        <Link to="/">
+          <strong>
+            <p>Home</p>
+          </strong>
+        </Link>
         <h2>About Me...</h2>
         <p>
           After 10 years, I made the decision to get out of the Marines in 2015
@@ -68,9 +73,6 @@ const Generic = () => (
           Completing one challenge means you get to move on a to a new one every
           day.
         </p>
-        <Link to="/" className="button">
-          Home
-        </Link>
       </section>
     </div>
   </Layout>
