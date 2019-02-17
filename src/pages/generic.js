@@ -3,13 +3,13 @@ import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import HeaderGeneric from '../components/HeaderGeneric'
+import Header from '../components/Header'
 import family from '../assets/images/family.jpg'
 
 const Generic = () => (
   <Layout>
     <Helmet title="Generic Page Title" />
-    <HeaderGeneric />
+    <Header />
     <div id="main">
       <section id="content" className="main">
         <span className="image main">

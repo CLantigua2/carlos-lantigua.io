@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import logo from '../assets/images/logo.png'
-
+import { Link } from 'gatsby'
 const Header = () => {
   const list = [
     {
@@ -23,14 +23,17 @@ const Header = () => {
   ]
   return (
     <header id="header" className="alt">
-      {/* <h1>Carlos Lantigua</h1> */}
-      <img src={logo} />
+      <StyledLink to="/" title="Home">
+        <img src={logo} />
+      </StyledLink>
       <p>Full Stack Web Developer</p>
       <br />
       <Container>
         {list.map((list, i) => (
           <div key={i}>
-            <a href={list.linkto}>{list.site}</a>
+            <a href={list.linkto} target="_blank" rel="noopener noreferrer">
+              {list.site}
+            </a>
           </div>
         ))}
       </Container>
@@ -45,4 +48,8 @@ const Container = styled.div`
   flex-direction: row;
   width: 100%;
   justify-content: space-evenly;
+`
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  border: none;
 `
