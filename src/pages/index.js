@@ -10,6 +10,7 @@ import carlos from '../assets/images/Carlos.jpg'
 import cadence from '../assets/images/cadence.gif'
 import chatify from '../assets/images/chatify.gif'
 import Tech from './Tech'
+import Form from '../components/Form'
 
 class Index extends React.Component {
   constructor(props) {
@@ -53,7 +54,9 @@ class Index extends React.Component {
                   design. I got a taste of Python coding and thought it was
                   awesome. From there I began to code on my own until I was
                   accepted into Lambda School where I went through an intense
-                  immersive fullstack program.
+                  immersive fullstack program. I've worked on team projects to
+                  deploy fully production ready apps as well as personal
+                  projects.
                 </p>
               </div>
               <span className="image">
@@ -166,6 +169,7 @@ class Index extends React.Component {
               things you didn't know and introduce you to challenges you may not
               have faced yet.
             </p>
+            <Form />
             <footer className="major">
               <ul className="actions">
                 <li>
