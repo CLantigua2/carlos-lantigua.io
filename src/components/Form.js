@@ -5,7 +5,12 @@ const Form = () => (
     <header className="major">
       <h2>Contact Me</h2>
     </header>
-    <StyledForm name="contact" method="POST" data-netlify="true">
+    <StyledForm
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+    >
       <p>
         <label>
           Your Name:{' '}
@@ -18,7 +23,7 @@ const Form = () => (
           <input
             type="email"
             name="email"
-            placeholder="ex. brucethedev@gmail.com"
+            placeholder="ex. brucethedev@email.com"
           />
         </label>
       </p>
@@ -38,6 +43,13 @@ const Form = () => (
 export default Form
 
 const StyledForm = styled.form`
-  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-width: 500px;
   text-align: left;
+  p {
+    min-width: 500px;
+  }
 `

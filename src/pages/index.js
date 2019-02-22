@@ -38,7 +38,7 @@ class Index extends React.Component {
           rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         />
         <Header />
 
@@ -56,14 +56,16 @@ class Index extends React.Component {
                   <h2>Behind the code..</h2>
                 </header>
                 <p>
-                  I am a Marine veteran turned programmer. I first found out
-                  that I enjoyed programming while persuing a degree in game art
-                  design. I got a taste of Python coding and thought it was
-                  awesome. From there I began to code on my own until I was
-                  accepted into Lambda School where I went through an intense
-                  immersive fullstack program. I've worked on team projects to
-                  deploy fully production ready apps as well as personal
-                  projects.
+                  I am a Marine veteran and skilled programmer that enjoys
+                  coming together with a team to find solutions for complex
+                  problems. I began self-learning for a year in 2017 before
+                  enrolling into Lambda Schools immersive Full Stack Web and
+                  Computer Science program. During my Time at Lambda School I
+                  completed and deployed live projects and worked on the team of
+                  engineers that deployed the employee shift scheduler Cadence.
+                  I also worked as a part time Project Manager during the
+                  evening to mentor students, review code, go over daily code
+                  challenges, assessment of mastery, and one on one sessions.
                 </p>
               </div>
               <span className="image">
@@ -110,7 +112,7 @@ class Index extends React.Component {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  view the repo
+                  See The Code
                 </a>
               </li>
 
@@ -140,7 +142,7 @@ class Index extends React.Component {
                   chatting.
                 </p>
                 <p>
-                  ReactJS | Redux | NodeJS | ExpressJS | MongoDB | JWT |
+                  ReactJS | Redux | NodeJS | ExpressJS | MongoDB | JWT | oAuth |
                   PassportJS | ValidatorJS
                 </p>
                 <a
@@ -148,7 +150,7 @@ class Index extends React.Component {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  view the repo
+                  See The Code
                 </a>
               </li>
 
@@ -170,15 +172,16 @@ class Index extends React.Component {
                   </a>
                 </h3>
                 <p>
-                  DevSocial is a social media app for professionals in the
-                  development and design fields. They can use this app to
-                  communicate, share ideas and even look for potential teams
-                  based on criteria to work with.
+                  DevSocial is a social media application for professionals
+                  within the development and design fields. They can use this
+                  app to communicate, share ideas and even look for potential
+                  teams based on the special criterias that you may want to work
+                  with.
                 </p>
 
                 <p>
                   ReactJS | Redux | NodeJS | ExpressJS | MongoDB | JWT |
-                  PassportJS | ValidatorJS
+                  PassportJS | ValidatorJS | Gravatar
                 </p>
                 <strong>
                   <a
@@ -186,7 +189,7 @@ class Index extends React.Component {
                     rel="noopener noreferrer"
                     target="_blank"
                   >
-                    view the repo
+                    See The Code
                   </a>
                 </strong>
               </li>
@@ -194,13 +197,13 @@ class Index extends React.Component {
             <footer className="major">
               <ul className="actions">
                 <li>
-                  <Link
-                    to="/https://devsocialdotcom.herokuapp.com/"
-                    className="button"
-                    style={{ padding: '10px' }}
+                  <Linked
+                    href="https://github.com/CLantigua2/"
+                    rel="noopener noreferrer"
+                    target="_blank"
                   >
                     <i className="fab fa-github" style={{ fontSize: '35px' }} />
-                  </Link>
+                  </Linked>
                 </li>
               </ul>
             </footer>
@@ -252,4 +255,23 @@ const Cadence = styled.a`
     width: 100%;
     margin-bottom: 50px;
   }
+`
+const Linked = styled.a`
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 300;
+  height: 2.75em;
+  line-height: 2.75em;
+  min-width: 3.25em;
+  border-radius: 32%;
+  padding: 7px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px #dddddd;
+  color: #636363;
 `
