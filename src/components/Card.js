@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-const Card = ({ site, image, header, body, tech, code }) => (
+
+const Card = ({ site, image, header, tech, code, alt }) => (
   <li>
     <Cadence href={site} target="blank" rel="noopener noreferrer">
-      <img className="cadence-img" src={image} alt={image} />
+      <img className="cadence-img" src={image} alt={alt} />
     </Cadence>
     <h3>{header}</h3>
-    <p>{body}</p>
     <p>{tech}</p>
     <a href={code} target="blank" rel="noopener noreferrer">
       See The Code

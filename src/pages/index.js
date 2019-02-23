@@ -120,17 +120,6 @@ class Index extends React.Component {
               <h2>The Tech...</h2>
             </header>
             <Tech />
-            <p className="content">
-              I enjoy working on a team that focuses on communication and
-              teamwork as the foundation of a products life cycle. I have
-              experience as a project manager leading small teams and as a
-              software engineer building out features utilizing agile
-              methodologies. Fluent in JavaScript, ReactJS, Node with ExpressJS,
-              git, RDB, test driven development, python, c and other
-              technologies. My favorite projects are the ones that teach you
-              things you didn't know and introduce you to challenges you may not
-              have faced yet.
-            </p>
             <Form />
             <footer className="major">
               <ul className="actions">

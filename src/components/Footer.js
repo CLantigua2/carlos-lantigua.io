@@ -7,9 +7,9 @@ const Footer = () => {
       <section>
         <h2>Want to see what else I build?</h2>
         <p>
-          Click the link below to checkout my github. <br />I can be reached
+          Click the link below to checkout my GitHub. <br />I can be reached
           through either Linkedin, <br />
-          twitter or github.
+          Twitter or Github.
         </p>
         <ul className="actions">
           <li>
