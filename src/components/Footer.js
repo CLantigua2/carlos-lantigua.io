@@ -1,29 +1,32 @@
 import React from 'react'
 import styled from 'styled-components'
+import Fade from 'react-reveal/Fade'
 
 const Footer = () => {
   return (
     <FooterContainer id="footer">
-      <section>
-        <h2>Want to see what else I build?</h2>
-        <p>
-          Click the link below to checkout my GitHub. <br />I can be reached
-          through either Linkedin, <br />
-          Twitter or Github.
-        </p>
-        <ul className="actions">
-          <li>
-            <a
-              href="https://github.com/CLantigua2"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="button"
-            >
-              My GitHub
-            </a>
-          </li>
-        </ul>
-      </section>
+      <Fade bottom>
+        <section>
+          <h2>Want to see what else I build?</h2>
+          <p>
+            Click the link below to checkout my GitHub. <br />I can be reached
+            through either Linkedin, <br />
+            Twitter or Github.
+          </p>
+          <ul className="actions">
+            <li>
+              <a
+                href="https://github.com/CLantigua2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button"
+              >
+                My GitHub
+              </a>
+            </li>
+          </ul>
+        </section>
+      </Fade>
       <section>
         <h2>Want to reach out?</h2>
         <ul className="icons">

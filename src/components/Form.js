@@ -8,6 +8,7 @@ const Form = () => (
     <StyledForm
       name="contact"
       method="POST"
+      netlify="true"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
     >
