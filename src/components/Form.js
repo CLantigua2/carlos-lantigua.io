@@ -7,15 +7,21 @@ const Form = () => (
     </header>
     <StyledForm
       name="contact"
-      method="POST"
+      method="post"
       netlify="true"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
+      hidden
     >
       <p>
         <label>
           Your Name:{' '}
-          <input type="text" name="name" placeholder="ex. Bruce Dwayne" />
+          <input
+            type="text"
+            name="name"
+            placeholder="ex. Bruce Dwayne"
+            action="/success"
+          />
         </label>
       </p>
       <p>
