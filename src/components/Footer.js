@@ -1,15 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
+import Fade from 'react-reveal/Fade'
 
-const Footer = () => {
-  return (
-    <FooterContainer id="footer">
-      <section>
+const Footer = () => (
+  <FooterContainer id="footer" data-aos="fade-up">
+    <section>
+      <Fade bottom duration={2000} delay={1000}>
         <h2>Want to see what else I build?</h2>
         <p>
-          Click the link below to checkout my github. <br />I can be reached
+          Click the link below to checkout my GitHub. <br />I can be reached
           through either Linkedin, <br />
-          twitter or github.
+          Twitter or Github.
         </p>
         <ul className="actions">
           <li>
@@ -23,8 +24,10 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-      </section>
-      <section>
+      </Fade>
+    </section>
+    <section>
+      <Fade bottom duration={2000} delay={1000}>
         <h2>Want to reach out?</h2>
         <ul className="icons">
           <li>
@@ -68,11 +71,12 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-      </section>
-      <p className="copyright">&copy; Carlos Lantigua.</p>
-    </FooterContainer>
-  )
-}
+      </Fade>
+    </section>
+    <p className="copyright">&copy; Carlos Lantigua.</p>
+  </FooterContainer>
+)
+
 export default Footer
 
 const FooterContainer = styled.footer`

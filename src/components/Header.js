@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <header id="header" className="alt">
       <StyledLink to="/" title="Home">
-        <img src={logo} />
+        <img src={logo} alt={logo} />
       </StyledLink>
       <p>Full Stack Web Developer</p>
       <br />
