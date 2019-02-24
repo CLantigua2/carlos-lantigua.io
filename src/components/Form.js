@@ -4,11 +4,11 @@ import Fade from 'react-reveal/Fade'
 
 const Form = () => (
   <section>
-    <Fade bottom duration={1000} delay={1000}>
-      <header className="major">
-        <h2>Contact Me</h2>
-      </header>
+    <header className="major">
+      <h2>Contact Me</h2>
+    </header>
 
+    <Fade bottom duration={1000} delay={500}>
       <StyledForm
         data-aos="fade-up"
         name="contact"
