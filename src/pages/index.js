@@ -150,4 +150,7 @@ const Linked = styled.a`
   :hover {
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 200, 0.5);
   }
+  @media only screen and (max-width: 500px) {
+    max-width: 4.25em;
+  }
 `

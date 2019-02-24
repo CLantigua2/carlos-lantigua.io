@@ -65,6 +65,15 @@ const StyledForm = styled.form`
   min-width: 500px;
   text-align: left;
   p {
-    min-width: 500px;
+    min-width: 300px;
+  }
+  @media only screen and (max-width: 500px) {
+    min-width: 300px;
+    align-items: none;
+    text-align: left;
+    p {
+      min-width: 300px;
+      font-size: 20px;
+    }
   }
 `
