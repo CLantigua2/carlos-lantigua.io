@@ -11,10 +11,6 @@ import Tech from './Tech'
 import Form from '../components/Form'
 import cardData from '../components/cardData'
 import Card from '../components/Card'
-import Fade from 'react-reveal/Fade'
-import config from 'react-reveal/globals'
-
-config({ ssrFadeout: true })
 
 class Index extends React.Component {
   constructor(props) {
@@ -64,27 +60,22 @@ class Index extends React.Component {
                 <header className="major">
                   <h2>Behind the code..</h2>
                 </header>
-                <Fade bottom>
-                  <p>
-                    I am a Marine veteran and skilled programmer that enjoys
-                    coming together with a team to find solutions for complex
-                    problems. I began self-learning for a year in 2017 before
-                    enrolling into Lambda Schools immersive Full Stack Web and
-                    Computer Science program. During my Time at Lambda School I
-                    completed and deployed live projects and worked on the team
-                    of engineers that deployed the employee shift scheduler
-                    Cadence. I also worked as a part time Project Manager during
-                    the evening to mentor students, review code, go over daily
-                    code challenges, assessment of mastery, and one on one
-                    sessions.
-                  </p>
-                </Fade>
+                <p>
+                  I am a Marine veteran and skilled programmer that enjoys
+                  coming together with a team to find solutions for complex
+                  problems. I began self-learning for a year in 2017 before
+                  enrolling into Lambda Schools immersive Full Stack Web and
+                  Computer Science program. During my Time at Lambda School I
+                  completed and deployed live projects and worked on the team of
+                  engineers that deployed the employee shift scheduler Cadence.
+                  I also worked as a part time Project Manager during the
+                  evening to mentor students, review code, go over daily code
+                  challenges, assessment of mastery, and one on one sessions.
+                </p>
               </div>
-              <Fade bottom>
-                <span className="image">
-                  <img src={carlos} alt="creator avatar" />
-                </span>
-              </Fade>
+              <span className="image">
+                <img src={carlos} alt="creator avatar" />
+              </span>
             </div>
           </section>
 
@@ -92,25 +83,23 @@ class Index extends React.Component {
             <header className="major">
               <h2>My Projects</h2>
             </header>
-            <Fade bottom>
-              <ul className="features">
-                {cardData &&
-                  cardData.map((card, i) => {
-                    return (
-                      <Card
-                        key={i}
-                        site={card.site}
-                        image={card.image}
-                        header={card.header}
-                        alt={card.image}
-                        body={card.body}
-                        tech={card.tech}
-                        code={card.code}
-                      />
-                    )
-                  })}
-              </ul>
-            </Fade>
+            <ul className="features">
+              {cardData &&
+                cardData.map((card, i) => {
+                  return (
+                    <Card
+                      key={i}
+                      site={card.site}
+                      image={card.image}
+                      header={card.header}
+                      alt={card.image}
+                      body={card.body}
+                      tech={card.tech}
+                      code={card.code}
+                    />
+                  )
+                })}
+            </ul>
             <footer className="major">
               <ul className="actions">
                 <li>
@@ -130,20 +119,14 @@ class Index extends React.Component {
             <header className="major">
               <h2>The Tech...</h2>
             </header>
-            <Fade bottom>
-              <Tech />
-            </Fade>
-            <Fade bottom>
-              <Form />
-            </Fade>
+            <Tech />
+            <Form />
             <footer className="major">
               <ul className="actions">
                 <li>
-                  <Fade bottom>
-                    <Link to="/generic" className="button">
-                      About Me
-                    </Link>
-                  </Fade>
+                  <Link to="/generic" className="button">
+                    About Me
+                  </Link>
                 </li>
               </ul>
             </footer>

@@ -1,16 +1,25 @@
 import React from 'react'
 import styled from 'styled-components'
+import Fade from 'react-reveal/Fade'
 
 const Card = ({ site, image, header, tech, code, alt }) => (
   <li>
     <Cadence href={site} target="blank" rel="noopener noreferrer">
-      <img className="cadence-img" src={image} alt={alt} />
+      <Fade bottom duration={1000}>
+        <img className="cadence-img" src={image} alt={alt} />
+      </Fade>
     </Cadence>
-    <h3>{header}</h3>
-    <p>{tech}</p>
-    <a href={code} target="blank" rel="noopener noreferrer">
-      See The Code
-    </a>
+    <Fade bottom duration={1200}>
+      <h3>{header}</h3>
+    </Fade>
+    <Fade bottom duration={1500}>
+      <p>{tech}</p>
+    </Fade>
+    <Fade bottom duration={1800}>
+      <a href={code} target="blank" rel="noopener noreferrer">
+        See The Code
+      </a>
+    </Fade>
   </li>
 )
 
