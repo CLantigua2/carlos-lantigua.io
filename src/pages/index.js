@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Waypoint from 'react-waypoint'
 import styled from 'styled-components'
@@ -121,15 +120,6 @@ class Index extends React.Component {
             </header>
             <Tech />
             <Form />
-            <footer className="major">
-              <ul className="actions">
-                <li>
-                  <Link to="/generic" className="button">
-                    About Me
-                  </Link>
-                </li>
-              </ul>
-            </footer>
           </section>
         </div>
       </Layout>
